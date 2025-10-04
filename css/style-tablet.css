@@ -556,7 +556,7 @@ body {
 
 .post-list-block-frame {
     width: 100%;
-    margin-top: -8px;
+    margin-top: 0px;
     margin-bottom: 22px;
 }
 
@@ -614,7 +614,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 11px;
-    width: 100%;
+    width: 395px;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
