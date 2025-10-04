@@ -254,16 +254,9 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 450px;
-}
-
-.cap-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-image: url("../img/banner-bg.jpg");
     z-index: 0;
+    background-size: cover;
 }
 
 .cap-block {
@@ -298,9 +291,7 @@ body {
 
 .cap-menu__desktop {
     display: flex;
-    margin-top: 16px;
     margin-left: auto;
-    margin-bottom: 10px;
     padding: 0;
     gap: 36px;
     list-style-type: none;
@@ -870,11 +861,20 @@ body {
     margin-top: 28px;
 }
 
-.shop-photo {
+.shop-photo__desktop {
     position: relative;
     top: 0;
     left: 23px;
     z-index: 1;
+}
+
+
+.shop-photo__tablet {
+    display: none;
+}
+
+.shop-photo__mobile {
+    display: none;
 }
 
 .shop-info {
