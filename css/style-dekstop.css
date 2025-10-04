@@ -270,7 +270,7 @@ body {
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    padding: 28px 245px  28px 248px;
+    padding: 28px 240px  25px 235px;
 }
 
 .cap-header {
@@ -283,6 +283,7 @@ body {
 .cap-logo {
     width: 179px;
     object-fit: cover;
+    margin-left: 10px;
 }
 
 .cap-menu-tablet {
