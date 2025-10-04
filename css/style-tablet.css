@@ -519,7 +519,7 @@ body {
 .post-list {
     display: flex;
     flex-direction: column;
-    gap: 60.5px;
+    gap: 38px;
     box-sizing: border-box;
     margin: 0;
     width: 392px;
@@ -538,7 +538,7 @@ body {
     display: block;
     width: 392px;
     height: 3px;
-    margin-top: 18px;
+    margin-top: 12px;
     background-color: #eeeeee;
 }
 
@@ -576,7 +576,7 @@ body {
     display: block;
     font-size: 17px;
     line-height: 22px;
-    width: 390px;
+    width: 397px;
     color: #0f0d0e;
 }
 
@@ -614,7 +614,7 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 11px;
-    width: 395px;
+    width: 391px;
     font-size: 15px;
     line-height: 22px;
     color: #0f0d0e;
@@ -627,7 +627,7 @@ body {
     width: 100%;
     margin: 0;
     position: relative;
-    top: -5px;
+    top: -7px;
 }
 
 .sidebar {
