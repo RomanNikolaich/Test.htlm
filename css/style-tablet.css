@@ -254,16 +254,9 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: 392px;
-}
-
-.cap-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    background-image: url("../img/banner-bg-tablet.jpg");
     z-index: 0;
+    background-size: cover;
 }
 
 .cap-block {
@@ -277,7 +270,7 @@ body {
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    padding: 43px 35px 111px 35px;
+    padding: 43px 35px 114px 35px;
 }
 
 .cap-header {
@@ -292,6 +285,10 @@ body {
 .cap-logo {
     width: 158px;
     object-fit: cover;
+}
+
+.cap-menu__desktop {
+    display: none;
 }
 
 .cap-menu-tablet {
@@ -358,7 +355,7 @@ body {
 }
 
 .cap-title {
-    margin: 0px;
+    margin: 0 0 0 -5px;
     width: 610px;
     font-size: 40px;
     line-height: 55px;
@@ -448,9 +445,9 @@ body {
 
 .trends-container__block-info {
     box-sizing: border-box;
-    padding-top: 19px;
-    padding-left: 30px;
-    padding-bottom: 29px;
+    padding-top: 20px;
+    padding-left: 34px;
+    padding-bottom: 28px;
     width: 343px;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
@@ -481,9 +478,9 @@ body {
     cursor: pointer;
 }
 
-.category-personal {
+/*.category-personal {
     margin-bottom: -3px;
-}
+}*/
 
 .category__links {
     text-decoration: none;
@@ -502,6 +499,7 @@ body {
     color: #ffffff;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 2px;
 }
 
 .trends__secondary-title:hover {
@@ -530,7 +528,6 @@ body {
 .post-list-block {
     display: flex;
     flex-direction: column;
-    gap: 29px;
     position: relative;
     width: 100%;
     min-height: 294px;
@@ -541,6 +538,7 @@ body {
     display: block;
     width: 392px;
     height: 3px;
+    margin-top: 18px;
     background-color: #eeeeee;
 }
 
@@ -558,7 +556,7 @@ body {
 
 .post-list-block-frame {
     width: 100%;
-    margin-top: -35px;
+    margin-top: -8px;
     margin-bottom: 22px;
 }
 
@@ -591,7 +589,7 @@ body {
     text-align: start;
     gap: 13px;
     margin-top: 12px;
-    margin-left: -7px;
+    /*margin-left: -7px;*/
 }
 
 .post-list-date {
@@ -635,7 +633,7 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 61px;
+    gap: 60px;
     position: relative;
     top: 0;
     left: 35px;
@@ -900,7 +898,15 @@ body {
     margin-top: 28px;
 }
 
-.shop-photo {
+.shop-photo__desktop {
+    display: none;
+}
+
+.shop-photo__mobile {
+    display: none;
+}
+
+.shop-photo__tablet {
     position: relative;
     background-color: #eff6f1;
     top: 0;
