@@ -248,6 +248,13 @@ body {
     height: 48px;
 }
 
+dialog {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
 .cap {
     position: relative;
     display: flex;
@@ -287,6 +294,10 @@ body {
 }
 
 .cap-menu-tablet {
+    display: none;
+}
+
+.cap-menu-tablet__input {
     display: none;
 }
 
