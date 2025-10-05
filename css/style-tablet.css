@@ -457,10 +457,6 @@ body {
     padding-left: 39px;
 }
 
-.personal {
-    width: 204px;
-}
-
 .category {
     display: flex;
     flex-wrap: wrap;
@@ -494,6 +490,7 @@ body {
 
 .trends-secondary-title {
     display: block;
+    width: 254px;
     font-size: 17px;
     line-height: 22px;
     color: #ffffff;
@@ -501,6 +498,11 @@ body {
     text-decoration: none;
     margin-top: 2px;
 }
+
+.personal {
+    width: 204px;
+}
+
 
 .trends__secondary-title:hover {
     color: #b59f5b;
