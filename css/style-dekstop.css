@@ -896,7 +896,7 @@ dialog {
     flex-direction: column;
     padding: 0 21px 0 20px;
     left: 0;
-    bottom: 35px;
+    margin-top: -35px;
     width: 100%;
     min-height: 267px;
     z-index: 2;
