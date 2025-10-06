@@ -645,7 +645,7 @@ dialog {
     display: flex;
     flex-direction: column;
     gap: 22px;
-    margin-left: 60px;
+    margin-bottom: 60px;
 }
 
 .sidebar-titles {
@@ -707,6 +707,7 @@ dialog {
     display: flex;
     width: 330px;
     margin-left: 45px;
+    margin-bottom: 43px;
 }
 
 .search-input {
@@ -802,6 +803,7 @@ dialog {
     justify-content: center;
     flex-wrap: wrap;
     width: 100%;
+    margin-bottom: 43px;
 }
 
 .list-tags {
@@ -818,7 +820,7 @@ dialog {
     justify-content: center;
     box-sizing: border-box;
     color: #0f0d0e;
-    padding: 0 14px;
+    padding: 0 12px;
     font-size: 12px;
     height: 30px;
     background-color: rgba(244, 243, 241, 0);
@@ -834,6 +836,7 @@ dialog {
 .categories-list {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .categories__russian {
