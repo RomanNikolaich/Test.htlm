@@ -82,7 +82,7 @@ body {
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 45px 30px 54px 30px;
-    top: 236px;
+    top: 238px;
     margin: 0 auto;
 }
 
@@ -196,6 +196,17 @@ body {
     line-height: 1;
 }
 
+/*.form-empty-circle {
+    width: 15px;
+    height: 15px;
+}
+
+.form-circle {
+    display: none;
+    width: 15px;
+    height: 15px;
+}*/
+
 .radio-no {
     margin: 0 4px 0 17px;
 }
@@ -237,26 +248,29 @@ body {
     height: 48px;
 }
 
-dialog {
-  border: none;
-  padding: 0;
-  margin: 0;
-  background: transparent;
-}
-
 .cap {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 360px;
     min-height: 639px;
-    background-image: url("../img/banner-mobile.jpg");
+}
+
+.cap-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 360px;
+    height: 100%;
+    object-fit: cover;
+    object-position: left 0;
     z-index: 0;
-    background-size: cover;
 }
 
 .cap-block {
     position: relative;
+    box-sizing: border-box;
+    width: 360px;
     top: 0;
     left: 0;
     display: flex;
@@ -266,37 +280,34 @@ dialog {
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
-    padding: 31px 16px 210px 16px;
+    padding: 32px 32px 210px 42px;
 }
 
 .cap-header {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 253px;
+    height: 252px;
     margin-bottom: 37px;
 }
 
 .cap-logo {
     width: 269px;
     object-fit: cover;
-    order: 2 ;
-}
-
-.cap-menu__desktop {
-    display: none;
+    order: 2;
 }
 
 .cap-menu-tablet {
     display: flex;
-    justify-content: end;
-    height: 35px;
+    justify-content: space-between;
+    height: 19px;
     box-sizing: border-box;
-    align-self: end;
+    /*padding: 8px 0px 8px 0px;*/
     order: 1;
-    margin-bottom: 175px;
+    align-self: flex-end;
+    z-index: 1;
 }
 
 .cap-menu-tablet__box {
@@ -328,9 +339,12 @@ dialog {
 
 .cap-menu {
     display: none;
+    flex-wrap: wrap;
+    top: 0;
+    right: 52px;
     margin: 0 30px 0 0;
     padding: 0;
-    gap: 34px;
+    gap: 36px;
     list-style-type: none;
     font-size: 13px;
     text-transform: uppercase;
@@ -338,6 +352,7 @@ dialog {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-style: normal;
+    z-index: 2;
 }
 
 .cap-menu-tablet__input:checked + .cap-menu {
@@ -355,7 +370,6 @@ dialog {
 }
 
 .cap-title {
-    margin: 38px 0 0 0;
     margin: 0px;
     font-size: 26px;
     line-height: 36px;
@@ -374,9 +388,9 @@ dialog {
     position: relative;
     box-sizing: border-box;
     align-items: center;
-    margin-top: 44px;
+    margin-top: 42px;
     width: 100%;
-    min-height: 554px;
+    min-height: 990px;
 }
 
 .basic-title {
@@ -407,8 +421,8 @@ dialog {
     box-sizing: border-box;
     width: 100%;
     min-height: 934px;
-    margin-top: 24px;
-    gap: 2px;
+    margin-top: 19px;
+    gap: var(--gap-trends-container);
 }
 
 .trends-container__block {
@@ -423,7 +437,7 @@ dialog {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
+    bottom: 0;
     left: 0;
     object-fit: cover;
     z-index: 1;
@@ -439,23 +453,26 @@ dialog {
     width: 100%;
     min-height: 232px;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 0 0 16px 15px;
+    padding: 0 15px 16px 15px;
     z-index: 2;
 }
 
 .trends-container__block-info {
     box-sizing: border-box;
-    padding-top: 16px;
-    padding-left: 19px;
-    padding-bottom: 25px;
-    width: 330px;
-    min-height: 127px;
+    padding-top: 19px;
+    padding-left: 22px;
+    padding-bottom: 28px;
+    width: 343px;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
 }
 
-.trends-container__block-info__personal {
+/*.trends-container__block-info__personal {
     padding-left: 39px;
+}*/
+
+.personal {
+    width: 204px;
 }
 
 .category {
@@ -491,17 +508,11 @@ dialog {
 
 .trends-secondary-title {
     display: block;
-    width: 254px;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 2px;
-}
-
-.personal {
-    width: 204px;
 }
 
 .trends__secondary-title:hover {
@@ -515,71 +526,70 @@ dialog {
     padding: 0 0px 0 0px;
     margin: 50px auto 0 auto;
     box-sizing: border-box;
-    width: 330px;
+    width: 698px;
 }
 
 .post-list {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 60.5px;
     box-sizing: border-box;
     margin: 0;
-    width:100%;
+    width: 392px;
 }
 
 .post-list-block {
     display: flex;
     flex-direction: column;
+    gap: 29px;
     position: relative;
     width: 100%;
-    min-height: 440px;
+    min-height: 294px;
 }
 
 .post-list-line::after {
     content: '';
     display: block;
-    width: 330px;
+    width: 392px;
     height: 3px;
-    margin-top: 22px;
     background-color: #eeeeee;
 }
 
 .post-frame-and-text {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: -2px;
+    width: 390px;
 }
 
 .post-list-block-photo {
-    height: 253px;
+    height: 302px;
     width: auto;
     object-fit: cover;
 }
 
 .post-list-block-frame {
     width: 100%;
-    margin-top: 0px;
-    margin-bottom: 8px;
+    margin-top: -35px;
+    margin-bottom: 22px;
 }
 
 .category__frame {
-    width: 330px;
     line-height: 40px;
+    margin-bottom: 3px;
 }
 
 .secondary-title {
     display: block;
-    line-height: 22px;
+    line-height: 24px;
     cursor: pointer;
     text-decoration: none;
 }
 
 .post-title-block {
     display: block;
-    font-size: 16px;
-    line-height: 20px;
-    width: 330px;
+    font-size: 17px;
+    line-height: 22px;
+    width: 390px;
     color: #0f0d0e;
 }
 
@@ -590,9 +600,9 @@ dialog {
 .date-author {
     display: flex;
     text-align: start;
-    width: 330px;
-    gap: 15px;
-    margin-top: -2px;
+    gap: 13px;
+    margin-top: 12px;
+    margin-left: -7px;
 }
 
 .post-list-date {
@@ -601,8 +611,7 @@ dialog {
     color: #888888;
     font-family: "Open Sans";
     font-weight: normal;
-    margin-top: 0px;
-    margin-left: -7px;
+    margin-top: 6px;
 }
 
 .post-list-author {
@@ -610,17 +619,17 @@ dialog {
     line-height: 40px;
     text-transform: none;
     color: #000000;
-    margin-top: 0px;
+    margin-top: 6px;
 }
 
 .post-list-block-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 327px;
-    font-size: 14px;
-    line-height: 20px;
+    gap: 11px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
     color: #0f0d0e;
     font-family: "Open Sans";
     font-weight: normal;
@@ -631,16 +640,17 @@ dialog {
     width: 100%;
     margin: 0;
     position: relative;
-    top: 8px;
+    top: -5px;
 }
 
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 61px;
     position: relative;
-    width: 100%;
-    margin-top: 44px;
+    top: 0;
+    left: 35px;
+    width: 271px;
 }
 
 .latest-posts {
@@ -651,7 +661,7 @@ dialog {
 
 .sidebar-titles {
     margin: -10px 0 0 0;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -667,7 +677,7 @@ dialog {
 
 .latest-one-post {
     display: flex;
-    gap: 14px;
+    gap: 22px;
     width: 100%;
     min-height: 70px;
 }
@@ -679,7 +689,7 @@ dialog {
 }
 
 .latest-one-post-info {
-    width: 100%;
+    width: 181px;
     min-height: 70px;
 }
 
@@ -861,9 +871,9 @@ dialog {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 44px;
+    margin-top: 71px;
     box-sizing: border-box;
-    width: 100%;
+    width: 1170px;
 }
 
 .shop-title {
@@ -896,25 +906,17 @@ dialog {
     position: relative;
     z-index: 0;
     box-sizing: border-box;
-    width: 100%;
-    min-height: 435px;
+    width: 338px;
+    min-height: 458px;
     margin-top: 28px;
 }
 
-.shop-photo__desktop {
-    display: none;
-}
-
-.shop-photo__mobile {
+.shop-photo {
     position: relative;
     background-color: #eff6f1;
     top: 0;
     left: 23px;
     z-index: 1;
-}
-
-.shop-photo__tablet {
-    display: none;
 }
 
 .shop-info {
@@ -924,26 +926,16 @@ dialog {
     flex-direction: column;
     padding: 0 25px 0 22px;
     left: 0;
-    margin-top: -37px;
+    margin-top: -40px;
     width: 100%;
-    min-height: 220px;
+    min-height: 267px;
     z-index: 2;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
 }
 
-.shop-info__little {
-    min-height: 240px;
-}
-
-.shop-info__little-one {
-    min-height: 261px;
-}
-
 .cursor-auto {
     cursor: auto;
-    font-size: 17px;
-    line-height: 22px;
 }
 
 .shop-info > .secondary-title {
@@ -1045,9 +1037,9 @@ dialog {
 
 .site-end {
     position: relative;
-    width: 100%;
-    min-height: 153px;
-    margin: 43px auto 0 auto;
+    width: 698px;
+    height: 82px;
+    margin: 50px auto 0 auto;
 }
 
 .site-end-social {

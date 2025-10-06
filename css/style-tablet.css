@@ -82,7 +82,7 @@ body {
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 45px 30px 54px 30px;
-    top: 238px;
+    top: 236px;
     margin: 0 auto;
 }
 
@@ -246,6 +246,13 @@ body {
 .what-content-btn {
     min-width: 330px;
     height: 48px;
+}
+
+dialog {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
 }
 
 .cap {
