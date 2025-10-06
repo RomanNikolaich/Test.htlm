@@ -77,12 +77,12 @@ body {
 
 .popup__info {
     position: relative;
-    width: 390px;
-    height: 589px;
+    width: 331px;
+    height: 546px;
     background-color: #ffffff;
     box-sizing: border-box;
-    padding: 45px 30px 54px 30px;
-    top: 236px;
+    padding: 19px 25px 30x 25px;
+    top: 56px;
     margin: 0 auto;
 }
 
@@ -945,10 +945,6 @@ dialog {
     min-height: 261px;
 }
 
-.for-normal {
-    margin-top: 46px;
-}
-
 .cursor-auto {
     cursor: auto;
     font-size: 17px;
@@ -957,6 +953,10 @@ dialog {
 
 .shop-info > .secondary-title {
     margin-top: 50px;
+}
+
+.for-normal {
+    margin-top: 46px;
 }
 
 .shop-info-text {
