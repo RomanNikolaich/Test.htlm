@@ -106,8 +106,9 @@ body {
     display: flex;
 }
 
-.popup-title {
+.popup__info > .popup-title {
     text-align: center;
+    margin-top: 2px;
 }
 
 .popup-title::after {
@@ -115,7 +116,7 @@ body {
     display: block;
     width: 66px;
     height: 3px;
-    margin: 7px auto 10px auto;
+    margin: 7px auto 14px auto;
     opacity: 0.400;
     background: #b59f5b;
 }
@@ -196,19 +197,8 @@ body {
     line-height: 1;
 }
 
-/*.form-empty-circle {
-    width: 15px;
-    height: 15px;
-}
-
-.form-circle {
-    display: none;
-    width: 15px;
-    height: 15px;
-}*/
-
 .radio-no {
-    margin: 0 4px 0 17px;
+    margin: 0 4px 0 30px;
 }
 
 .visually-hidden:checked + .subscribe-variant::before {
