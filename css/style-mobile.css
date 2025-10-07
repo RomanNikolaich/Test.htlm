@@ -81,7 +81,7 @@ body {
     height: 546px;
     background-color: #ffffff;
     box-sizing: border-box;
-    padding: 19px 25px 30x 25px;
+    padding: 20px 25px 30px 25px;
     top: 56px;
     margin: 0 auto;
 }
@@ -92,7 +92,7 @@ body {
     height: 27px;
     border-radius: 0px;
     right: 0;
-    top: -36px;
+    top: -34px;
     cursor: pointer;
 }
 
@@ -115,7 +115,7 @@ body {
     display: block;
     width: 66px;
     height: 3px;
-    margin: 7px auto 10px auto;
+    margin: 9px auto 10px auto;
     opacity: 0.400;
     background: #b59f5b;
 }
@@ -144,7 +144,7 @@ body {
     -webkit-appearance: none;
     -moz-appearance: none;
     box-sizing: border-box;
-    width: 330px;
+    width: 280px;
     height: 48px;
     border: none;
     background-color: #f4f7f6;
@@ -169,6 +169,7 @@ body {
 }
 
 .popup-choice-subscribe {
+    width: 280px;
     line-height: 1;
     margin-bottom: 9px;
 }
@@ -214,10 +215,11 @@ body {
 .what-content-write {
     border: none;
     box-sizing: border-box;
-    width: 330px;
+    width: 280px;
     height: 131px;
+    resize: none;
     background-color: #f4f7f6;
-    margin: 25px 0 0 0;
+    margin: 8px 0 10px 0;
     padding: 0 0 0 21px;
     opacity: 0.541;
     font-size: 13px;
@@ -232,8 +234,8 @@ body {
     outline: 1px solid #b59f5b;
 }
 
-.what-content-btn {
-    min-width: 330px;
+.what-content > .what-content-btn {
+    width: 280px;
     height: 48px;
 }
 
