@@ -172,6 +172,7 @@ body {
 .popup-choice-subscribe {
     line-height: 1;
     margin-bottom: 9px;
+    width: 320px;
 }
 
 .subscribe-variant {
@@ -217,6 +218,7 @@ body {
     box-sizing: border-box;
     width: 330px;
     height: 131px;
+    resize: none;
     background-color: #f4f7f6;
     margin: 25px 0 0 0;
     padding: 0 0 0 21px;
@@ -234,7 +236,7 @@ body {
 }
 
 .what-content-write::placeholder {
-    padding-top: -5px;
+    padding-top: 5px;
 }
 
 .what-content-btn {
