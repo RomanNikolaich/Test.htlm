@@ -78,7 +78,7 @@ body {
 .popup__info {
     position: relative;
     width: 390px;
-    height: 589px;
+    height: 596px;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 45px 30px 54px 30px;
@@ -166,7 +166,7 @@ body {
 .popup-subscribe {
     width: 330px;
     height: 58px;
-    margin: 33px 0 0 0;
+    margin: 33px 0 20px 0;
 }
 
 .popup-choice-subscribe {
@@ -231,6 +231,10 @@ body {
 
 .what-content-write:focus {
     outline: 1px solid #b59f5b;
+}
+
+.what-content-write::placeholder {
+    padding-top: -5px;
 }
 
 .what-content-btn {
