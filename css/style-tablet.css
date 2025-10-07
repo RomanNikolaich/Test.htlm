@@ -221,7 +221,7 @@ body {
     height: 131px;
     resize: none;
     background-color: #f4f7f6;
-    margin: 4px 0 0 0;
+    margin: 9px 0 0 0;
     padding: 0 0 0 21px;
     opacity: 0.541;
     font-size: 13px;
@@ -239,7 +239,7 @@ body {
 .what-content > .what-content-btn {
     min-width: 330px;
     height: 48px;
-    margin-top: 22px;
+    margin-top: 18px;
 }
 
 dialog {
