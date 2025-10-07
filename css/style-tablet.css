@@ -151,6 +151,7 @@ body {
     background-color: #f4f7f6;
     padding: 0 0 0 19px;
     cursor: pointer;
+    margin-bottom: -4px;
 }
 
 .variant {
@@ -171,7 +172,7 @@ body {
 
 .popup-choice-subscribe {
     line-height: 1;
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     width: 320px;
 }
 
@@ -220,7 +221,7 @@ body {
     height: 131px;
     resize: none;
     background-color: #f4f7f6;
-    margin: 25px 0 0 0;
+    margin: 4px 0 0 0;
     padding: 0 0 0 21px;
     opacity: 0.541;
     font-size: 13px;
@@ -235,13 +236,10 @@ body {
     outline: 1px solid #b59f5b;
 }
 
-.what-content-write::placeholder {
-    padding-top: 5px;
-}
-
-.what-content-btn {
+.what-content > .what-content-btn {
     min-width: 330px;
     height: 48px;
+    margin-top: 22px;
 }
 
 dialog {
