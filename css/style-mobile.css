@@ -163,7 +163,7 @@ body {
 }
 
 .popup-subscribe {
-    width: 330px;
+    width: 280px;
     height: 58px;
     margin: 33px 0 0 0;
 }
@@ -172,6 +172,7 @@ body {
     width: 280px;
     line-height: 1;
     margin-bottom: 9px;
+    margin-top: 23px;
 }
 
 .subscribe-variant {
@@ -198,7 +199,7 @@ body {
 }
 
 .radio-no {
-    margin: 0 4px 0 17px;
+    margin: 0 4px 0 31px;
 }
 
 .visually-hidden:checked + .subscribe-variant::before {
@@ -237,6 +238,7 @@ body {
 .what-content > .what-content-btn {
     width: 280px;
     height: 48px;
+    margin: 8px 0 0 0;
 }
 
 dialog {
