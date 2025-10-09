@@ -2,18 +2,17 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой проект</title>
-<!--    <link rel="stylesheet" href="css/style-tablet.css" media="(min-width: 768px)">-->
-    <link rel="stylesheet" href="css/style-dekstop.css" media="(min-width: 1660px)">
-<!--    <link rel="stylesheet" href="css/style-mobile.css" media="(min-width: 360px)">-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
-        <dialog class="popup" open>
+        <input id="close" type="checkbox" class="visually-hidden close">
+        <dialog class="popup">
             <div class="popup__block">
                 <form action="#" method="dialog" class="popup__info">
-                    <label class="popup__close"><img src="svg/form-x.svg" alt="image"></label>
+                    <label for="close" class="popup__close"><img src="svg/form-x.svg" alt="image"></label>
                     <h2 class="basic-title popup-title">Ваш фидбек</h2>
                     <div class="popup-choice">
                         <h3 class="popup-choice-question">Как часто вы заходите на сайт?</h3>
@@ -65,9 +64,9 @@
                             <li><a class="cap-menu__link" href="#">Контакты</a></li>
                         </ul>
                         <label for="menu" class="cap-menu-tablet__box">
-                            <div class="cap-menu-tablet__btn"></div>
-                            <div class="cap-menu-tablet__btn"></div>
-                            <div class="cap-menu-tablet__btn"></div>
+                            <span class="cap-menu-tablet__btn">Меню</span>
+                            <span class="cap-menu-tablet__btn">Меню</span>
+                            <span class="cap-menu-tablet__btn">Меню</span>
                         </label>
                     </div>
                     <ul class="cap-menu__desktop">
@@ -95,8 +94,8 @@
                                 <li><a class="category__links" href="#">lifestyle</a></li>
                                 <li><a class="category__links" href="#">interior</a></li>
                             </ul>
-                            <a class="basic-title trends-secondary-title personal" href="#">
-                                Сейчас в тренде: сад на подоконнике</a>
+                            <h3><a class="basic-title trends-secondary-title personal" href="#">
+                                Сейчас в тренде: сад на подоконнике</a></h3>
                         </div>
                     </div>
                 </article>
@@ -107,8 +106,8 @@
                             <ul class="category category-personal">
                                 <li><a class="category__links" href="#">food</a></li>
                             </ul>
-                            <a class="basic-title trends-secondary-title" href="#">
-                                Сыры на красивых картинка из интернета: какие они на вкус?</a>
+                            <h3><a class="basic-title trends-secondary-title" href="#">
+                                Сыры на красивых картинка из интернета: какие они на вкус?</a></h3>
                         </div>
                     </div>
                 </article>
@@ -120,8 +119,8 @@
                                 <li><a class="category__links" href="#">lifestyle</a></li>
                                 <li><a class="category__links" href="#">travel</a></li>
                             </ul>
-                            <a class="basic-title trends-secondary-title" href="#">
-                                Собираемся в первый поход в горы</a>
+                            <h3><a class="basic-title trends-secondary-title" href="#">
+                                Собираемся в первый поход в горы</a></h3>
                         </div>
                     </div>
                 </article>
@@ -133,8 +132,8 @@
                                 <li><a class="category__links" href="#">food</a></li>
                                 <li><a class="category__links" href="#">health</a></li>
                             </ul>
-                            <a class="basic-title trends-secondary-title" href="#">
-                                Сейчас в тренде: сколько витамина с в лимонах?</a>
+                            <h3><a class="basic-title trends-secondary-title" href="#">
+                                Сейчас в тренде: сколько витамина с в лимонах?</a></h3>
                         </div>
                     </div>
                 </article>
@@ -150,8 +149,8 @@
                                 <li><a class="category__links" href="#">travel</a></li>
                                 <li><a class="category__links" href="#">health</a></li>
                             </ul>
-                            <a class="basic-title secondary-title post-title-block" href="#">
-                                10 мест, ради которых стоит проснуться на рассвете</a>
+                            <h3><a class="basic-title secondary-title post-title-block" href="#">
+                                10 мест, ради которых стоит проснуться на рассвете</a></h3>
                             <div class="date-author">
                                 <div class="basic-title post-list-date">10 июня 2019</div>
                                 <div class="basic-title post-list-author">Неизвестный автор</div>
@@ -172,7 +171,7 @@
                                 <li><a class="category__links" href="#">health</a></li>
                                 <li><a class="category__links" href="#">lifestyle</a></li>
                             </ul>
-                            <a class="basic-title secondary-title post-title-block" href="#">Йога для начинающих в домашних условиях</a>
+                            <h3><a class="basic-title secondary-title post-title-block" href="#">Йога для начинающих в домашних условиях</a></h3>
                             <div class="date-author">
                                 <span class="basic-title post-list-date">10 июня 2019</span>
                                 <span class="basic-title post-list-author">Неизвестный автор</span>
@@ -192,7 +191,7 @@
                             <ul class="category category__frame">
                                 <li><a class="category__links" href="#">music</a></li>
                             </ul>
-                            <a class="basic-title secondary-title post-title-block" href="#">Лучшие музыкальные фестивали этого лета</a>
+                            <h3><a class="basic-title secondary-title post-title-block" href="#">Лучшие музыкальные фестивали этого лета</a></h3>
                             <div class="date-author">
                                 <span class="basic-title post-list-date">10 июня 2019</span>
                                 <span class="basic-title post-list-author">Неизвестный автор</span>
@@ -216,7 +215,7 @@
                                 <li><a class="category__links" href="#">lifestyle</a></li>
                                 <li><a class="category__links" href="#">food</a></li>
                             </ul>
-                            <a class="basic-title secondary-title post-title-block" href="#">Наукоёмкий подход к кулинарии</a>
+                            <h3><a class="basic-title secondary-title post-title-block" href="#">Наукоёмкий подход к кулинарии</a></h3>
                             <div class="date-author">
                                 <span class="basic-title post-list-date">10 июня 2019</span>
                                 <span class="basic-title post-list-author">Неизвестный автор</span>
@@ -237,7 +236,7 @@
                                 <li><a class="category__links" href="#">interior</a></li>
                                 <li><a class="category__links" href="#">art</a></li>
                             </ul>
-                            <a class="basic-title secondary-title post-title-block" href="#">Делаем модные принты на подушках для интерьера</a>
+                            <h3><a class="basic-title secondary-title post-title-block" href="#">Делаем модные принты на подушках для интерьера</a></h3>
                             <div class="date-author">
                                 <span class="basic-title post-list-date">10 июня 2019</span>
                                 <span class="basic-title post-list-author">Неизвестный автор</span>
@@ -259,8 +258,8 @@
                             <img src="img/2.jpg" alt="image"></a>
                         <div class="latest-one-post-info">
                             <span class="post-list-date latest-post-date">14 июня 2019</span>
-                            <a class="basic-title latest-post-name" href="#">
-                                10 мест, ради которых стоит проснуться</a>
+                            <h3><a class="basic-title latest-post-name" href="#">
+                                10 мест, ради которых стоит проснуться</a></h3>
                         </div>
                     </article>
                     <article class="latest-one-post">
@@ -268,8 +267,8 @@
                             <img src="img/151.jpg" alt="image"></a>
                         <div class="latest-one-post-info">
                             <span class="post-list-date latest-post-date">14 июня 2019</span>
-                            <a class="basic-title latest-post-name" href="#">
-                                Йога для домашних</a>
+                            <h3><a class="basic-title latest-post-name" href="#">
+                                Йога для домашних</a></h3>
                         </div>
                     </article>
                     <article class="latest-one-post">
@@ -277,8 +276,8 @@
                             <img src="img/45.jpg" alt="image"></a>
                         <div class="latest-one-post-info">
                             <span class="post-list-date latest-post-date">14 июня 2019</span>
-                            <a class="basic-title latest-post-name" href="#">
-                                Как мы превратили классное место в балкон</a>
+                            <h3><a class="basic-title latest-post-name" href="#">
+                                Как мы превратили классное место в балкон</a></h3>
                         </div>
                     </article>
                     <article class="latest-one-post">
@@ -286,8 +285,8 @@
                             <img src="img/501.jpg" alt="image"></a>
                         <div class="latest-one-post-info">
                             <span class="post-list-date latest-post-date">14 июня 2019</span>
-                            <a class="basic-title latest-post-name" href="#">
-                                Кулинарный подход к науке</a>
+                            <h3><a class="basic-title latest-post-name" href="#">
+                                Кулинарный подход к науке</a></h3>
                         </div>
                     </article>
                     <article class="latest-one-post">
@@ -295,8 +294,8 @@
                             <img src="img/7.jpg" alt="image"></a>
                         <div class="latest-one-post-info">
                             <span class="post-list-date latest-post-date">14 июня 2019</span>
-                            <a class="basic-title latest-post-name" href="#">
-                                Лучшие прически для распущенных волос</a>
+                            <h3><a class="basic-title latest-post-name" href="#">
+                                Кулинарный подход к науке</a></h3>
                         </div>
                     </article>
                 </section>

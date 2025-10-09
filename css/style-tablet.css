@@ -31,12 +31,6 @@ body {
     background: #ffffff;
 }
 
-.container {
-    position: relative;
-    max-width: 768px;
-    width: 100%;
-    margin: 0 auto;
-}
 
 .popup {
   position: relative;
@@ -102,8 +96,8 @@ body {
     height: 100%;
 }
 
-.visually-hidden:checked + .popup__block {
-    display: flex;
+.close:checked ~ .popup {
+    display: none;
 }
 
 .popup__info > .popup-title {
@@ -325,6 +319,7 @@ dialog {
     width: 23px;
     height: 3px;
     background-color: #ffffff;
+    font-size: 0;
 }
 
 .cap-menu {
@@ -552,6 +547,8 @@ dialog {
 }
 
 .post-list-block-photo {
+    background-color: #f4f7f6;
+    min-width: 392px;
     height: 302px;
     width: auto;
     object-fit: cover;
@@ -581,6 +578,10 @@ dialog {
     line-height: 22px;
     width: 397px;
     color: #0f0d0e;
+}
+
+.post-title-block:hover {
+    color: #b59f5b;
 }
 
 .secondary-title-post-list:hover {
@@ -673,6 +674,8 @@ dialog {
 }
 
 .latest-one-post-photo {
+    background-color: #f4f7f6;
+    width: 70px;
     height: 70px;
     cursor: pointer;
     text-decoration: none;
@@ -700,6 +703,10 @@ dialog {
     color: #000000;
     cursor: pointer;
     text-decoration: none;
+}
+
+.latest-post-name:hover {
+    color: #b59f5b;
 }
 
 .search {
@@ -770,7 +777,7 @@ dialog {
     margin: 6px auto 23px auto;
 }
 
-.sidebar-subscribe:focus {
+.subscribe-email:focus {
     outline: 1px solid #b59f5b;
 }
 
@@ -821,6 +828,10 @@ dialog {
     background-color: rgba(244, 243, 241, 0);
     border: 3px solid #eeeeee;
     text-decoration: none;
+}
+
+.category__tags:hover {
+    border: 3px solid #b59f5b;
 }
 
 .categories > .sidebar-titles::after {

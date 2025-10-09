@@ -102,8 +102,8 @@ body {
     height: 100%;
 }
 
-.visually-hidden:checked + .popup__block {
-    display: flex;
+.close:checked ~ .popup {
+    display: none;
 }
 
 .popup-title {
@@ -276,7 +276,6 @@ dialog {
 .cap-header {
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
     align-items: center;
     width: 100%;
     height: 253px;
@@ -286,7 +285,7 @@ dialog {
 .cap-logo {
     width: 269px;
     object-fit: cover;
-    order: 2 ;
+    order: 2;
 }
 
 .cap-menu__desktop {
@@ -294,6 +293,8 @@ dialog {
 }
 
 .cap-menu-tablet {
+    position: relative;
+    z-index: 0;
     display: flex;
     justify-content: end;
     height: 35px;
@@ -328,11 +329,17 @@ dialog {
     width: 23px;
     height: 3px;
     background-color: #ffffff;
+    font-size: 0;
 }
 
 .cap-menu {
     display: none;
-    margin: 0 30px 0 0;
+    position: absolute;
+    width; 100%;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 4px 0 0;
     padding: 0;
     gap: 34px;
     list-style-type: none;
@@ -342,6 +349,13 @@ dialog {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-style: normal;
+    flex-direction: row;
+    flex-wrap: wrap;
+    right: 100%;
+    top: 0;
+    width: calc(100vw - 50px);
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 .cap-menu-tablet__input:checked + .cap-menu {
@@ -479,10 +493,6 @@ dialog {
     cursor: pointer;
 }
 
-/*.category-personal {
-    margin-bottom: -3px;
-}*/
-
 .category__links {
     text-decoration: none;
     color: inherit;
@@ -585,6 +595,10 @@ dialog {
     line-height: 20px;
     width: 330px;
     color: #0f0d0e;
+}
+
+.post-title-block:hover {
+    color: #b59f5b;
 }
 
 .secondary-title-post-list:hover {
@@ -707,6 +721,10 @@ dialog {
     text-decoration: none;
 }
 
+.latest-post-name:hover {
+    color: #b59f5b;
+}
+
 .search {
     display: flex;
     width: 330px;
@@ -777,7 +795,7 @@ dialog {
     margin: 6px auto 23px auto;
 }
 
-.sidebar-subscribe:focus {
+.subscribe-email:focus {
     outline: 1px solid #b59f5b;
 }
 
@@ -829,6 +847,10 @@ dialog {
     background-color: rgba(244, 243, 241, 0);
     border: 3px solid #eeeeee;
     text-decoration: none;
+}
+
+.category__tags:hover {
+    border: 3px solid #b59f5b;
 }
 
 .categories > .sidebar-titles::after {
