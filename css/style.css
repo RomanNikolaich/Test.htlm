@@ -23,19 +23,24 @@
 }
 
 html {
+    height: 100%;
     font-size: 100%;
 }
 
 body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     background: #ffffff;
 }
 
 .container {
     position: relative;
-    max-width: 1660px;
+    /*max-width: 100%;*/
     width: 100%;
 }
+
+/** { outline: 1px solid red }*/
 
 .popup {
     display: none;
@@ -378,12 +383,12 @@ dialog {
 
 .trends {
     display: flex;
+    width: 100%;
     flex-direction: column;
     position: relative;
     box-sizing: border-box;
     align-items: center;
     margin-top: 57px;
-    width: 100%;
     min-height: 386px;
 }
 
@@ -417,22 +422,25 @@ dialog {
     min-height: 320px;
     margin-top: 28px;
     gap: var(--gap-trends-container);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .trends-container__block {
     display: flex;
     position: relative;
-    width: calc((1660px - 12px) / 4);
-    min-height: 319px;
+    width: calc((100% - 12px) / 4);
+    max-height: 319px;
     z-index: 0;
 }
 
 .trends-container__blok-photo {
     position: absolute;
     width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
+    object-position: center center;
     z-index: 1;
 }
 
@@ -455,10 +463,18 @@ dialog {
     padding-top: 23px;
     padding-left: 36px;
     padding-bottom: 33px;
+    margin: 0 auto;
     width: 370px;
     background-color: rgba(0,0,0,0);
     border: 3px solid #b59f5b;
 }
+
+/*@media (min-width: 1850px) {
+    .trends-container__block-info {
+        margin: 0 auto;
+    }
+}*/
+
 
 .trends-container__block-info__personal {
     padding-left: 39px;
